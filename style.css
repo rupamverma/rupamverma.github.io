@@ -1,0 +1,81 @@
+ body{
+    margin-top:100px;
+    margin-bottom: 35%;
+      font-family: Verdana, Geneva, sans-serif;
+}
+
+       .navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse {
+        padding-right: 2%;
+        }.navbar-inverse .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+            background-color: green;}
+
+       .navbar-default .navbar-nav > li > a {
+   background-color: green;
+}
+            .navbar-nav>li>a {
+                line-height: 27px;
+
+            }
+               .navbar-nav>ul> li> a:hover {
+                background-color: green;
+          
+        }.top-bar{
+    height:5px;
+    background:#ca2129;
+    margin-bottom:1px;
+}.navbar li:hover{
+    background:#000000;
+}
+         h3{
+            color: green;
+            
+         }h1, .h2, .h3, h1, h2, h3 {
+            margin-left: 8px;
+            margin-top: 2%;}
+        .jumbotron{
+    background:  no-repeat 50% 0;
+    height:350px;
+    padding:0;
+}.img-circle {
+    border-radius: 50%;
+}.media-object {
+    display: inline-block;
+}img {
+    vertical-align: middle;
+}.media-body {
+    font-size: 120%;}
+    .table {
+    border-bottom:0px !important;
+}
+.table th, .table td {
+    border: 1px !important;
+}
+.fixed-table-container {
+    border:0px !important;
+}.border-bottom{
+
+  border-bottom: 4px solid green;
+  margin: 0% 12%;
+  margin-left: 1%;
+  padding-bottom:  2%;
+}
+.head{
+   
+        font-size: 60px;
+    
+        font-size: 60px;
+       
+         width: 50%;
+ }.col-xs-10, h4.all{
+
+     font-family: Verdana, Geneva, sans-serif;
+ }
+ footer {
+    text-align: center;
+    padding: 20px 0;
+   font-family: Verdana, Geneva, sans-serif;
+  
+    color: white;
+
+} 
+ 
