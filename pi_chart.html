@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<title>Welcome to my pages</title>
+	<style>
+	body{
+		font-family: Verdana, Geneva, sans-serif;
+		
+	}
+.head{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.table-scroll tbody {
+    position: absolute;
+    overflow-y: scroll;
+    height: 300px;
+}
+
+.table-scroll tr {
+    width: 100%;
+    table-layout: fixed;
+    display: inline-table;
+}
+
+.table-scroll thead > tr > th {
+    border: none;
+}
+
+ @media only screen and (min-width: 240px) and (max-width: 568px){
+ 	.col-md-5{
+ 		margin-left: 3%
+ 		margin-right:8%;
+ 	}
+	}
+	</style>
+</head>
+<body>
+
+<div class="container">
+		<div class="jumbotron">
+		   <h1 class="head">India</h1>
+		     <div>The population of India is second largest in the world, next only to China. It land size is seventh largest in the world.
+         India is 3rd largest economy in terms of PPP and 10th largest in terms of nominal GDP.India is one of the major economies of South-east Asia. India has 29 states and 7 union territories.The capital city of India is New Delhi. Mumbai in Maharashtra is famous as the financial capital of India.India has rich cultural heritage of more than 3000 years.The National Anthem of India is “Jana Gana Mana” and the National song is “Vande Mataram”.The mojor festivals in India are Holi, Diwali, Durga Puja, Saraswati Puja, Mahavir Jayanti, Eid, Muharram, Christmas,The major religions practiced in India are Hinduism, Islam, Sikhism, Christianity, Jainism, etc. India is a secular country and no religion is considered superior over the other.The most spoken language in India is Hindi. There is no national language in India.The largest mountain ranges in India are the Himalayan Mountain Ranges while the largest river is Ganges. It is surrounded by Indian Ocean, Arabian Ocean and Bay of Bengal in thesouth,south-west and south-east respectively.</div></br>
+		    <div class="row">
+		      <div class="col-md-5">
+			<table id="div1" class="table table-scroll">
+              <thead>
+                 <tbody>
+                   <th><h3>State</h3></th>
+                      <th><h3>Population</h3>
+                      </th>
+                      </tbody>
+                      </thead>
+                      </table>
+                      </div>
+		<div class="col-md-7">
+		 <div id="piechart" style="width: 100%; height: 450px; margin: 0 auto">
+		  </div>
+		    </div>
+		       </div>
+		       </div>
+		       </div>
+		       <div class="footer navbar  navbar-bottom">
+		       <h5 class="col-sm-offset-5">Coded and written by <a href="https://rupamverma.github.io/"> Rupam</a></h5>
+
+		       <script language="JavaScript">
+			   $(document).ready(function(){
+			   var data1= [["Uttar Pradesh",199281477],["Maharashtra",112372972],["Bihar",103804637],["West Bengal",91347736],["Madhya Pradesh",72597565],["Tamil Nadu",72138958],["Rajasthan",68621012],["Karnataka",61130704],["Gujarat",60383628],["Andhra Pradesh",49386799],["Odisha",41947358],["Telangana",35286757],["Kerala",33387677],["	Jharkhand",32966238],["Assam",31169272],["Punjab",27704236],["Chhattisgarh",25540196],["Haryana",25353081],["Jammu and Kashmir",12548926],["Uttarakhand",10116752],["Himachal Pradesh",6864602],["Tripura",3671032],["Meghalaya",2964007],["Manipur",2721756],["Nagaland",1980602],["Goa",1457723],["Arunachal Pradesh",1382611],["Mizoram",1091014],["Sikkim",607688]];
+                  var html='';
+
+                  for(i=0;i<data1.length;i++){
+                  	html += "<tr> <td>"+data1[i][0] +"</td>" +"<td>" +data1[i][1] +"</td></tr>";
+
+                  }
+			    
+			     $("#div1").append(html);
+		
+			    google.charts.load('current', {'packages':['corechart']});
+                    google.charts.setOnLoadCallback(drawChart);
+
+                function drawChart() {
+                   var data = google.visualization.arrayToDataTable(
+                     [['City', ' Population'],["Uttar Pradesh",199281477],["Maharashtra",112372972],["Bihar",103804637],["West Bengal",91347736],["Madhya Pradesh",72597565],["Tamil Nadu",72138958],["Rajasthan",68621012],["Karnataka",61130704],["Gujarat",60383628],["Andhra Pradesh",49386799],["Odisha",41947358],["Telangana",35286757],["Kerala",33387677],["  Jharkhand",32966238],["Assam",31169272],["Punjab",27704236],["Chhattisgarh",25540196],["Haryana",25353081],["Jammu and Kashmir",12548926],["Uttarakhand",10116752],["Himachal Pradesh",6864602],["Tripura",3671032],["Meghalaya",2964007],["Manipur",2721756],["Nagaland",1980602],["Goa",1457723],["Arunachal Pradesh",1382611],["Mizoram",1091014],["Sikkim",607688]]
+       
+        );
+
+        var options = {
+          title: 'State Population'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+      	 });
+			    
+			   </script>
+			   </body>
+			   </html>
