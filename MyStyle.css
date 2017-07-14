@@ -1,0 +1,34 @@
+ body{
+    font-family: Verdana, Geneva, sans-serif;
+  }
+  .head{
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .table-scroll tbody {
+    position: absolute;
+    overflow-y: scroll;
+    height: 300px;
+  }
+  .table-scroll tr {
+    width: 100%;
+    table-layout: fixed;
+    display: inline-table;
+  }
+  .table-scroll thead > tr > th {
+    border: none;
+  }
+  .justify {
+    text-align:justify;
+    text-justify:inter-word;
+  }
+  .jumbotron{
+    padding-bottom: 8%;
+  }
+  @media only screen and (min-width: 240px) and (max-width: 568px){
+    .col-md-5{
+      margin-bottom: 100%;
+    }.col-sm-offset-5{
+      margin-left: 12%;
+    }
+  }
