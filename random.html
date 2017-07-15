@@ -140,75 +140,73 @@ background-color: #333;
 	</style>
 
 </head>
-<body style="background-color: #333">
+	<body style="background-color: #333">
+	<div class="thumbnail">
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container-fluid border">
+	<div class="nav navbar navbar .navbar-collapse ">
+	<h1 style="color: white;font-size: 40px; text-align: center;">Quote of the Day...!!!!</h1>
+        </div>
+      </div>
+  </nav>
+</div>
+         <div class="container-fluid">
+	<div  style="margin-top: 6%"  class="row ">
+	<div class="col-sm-6 col-sm-offset-4 quote-text">
+	<div id="page1"><hr/>
+	<div id="quotedisplay"></div>
+	<div class="col-xs-12">
+	<button class="button" style="float: right;" onclick="newquote()">New Quote 
+	</button>
+	<a href="#" data-toggle="tooltip" title="Twitt this quote!">
+	<button class="buttons">
+	<i class="fa fa-twitter">
+	</i></button></a>
+	<a style="color:#fff" href="#" data-toggle="tooltip" title="poat this quote on fb!">
+	<button style="margin-left: 1%" class="buttons">
+	<i class="fa fa-facebook-square"></i>  </button></a>
+	</div></div></div></div></div>
 
-   
-          <div class="thumbnail">
-          <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-              <div class="container-fluid border">
-               <div class="nav navbar navbar .navbar-collapse ">
-                <h1 style="color: white;font-size: 40px; text-align: center;">Quote of the Day...!!!!</h1>
-                  </div></div></nav></div>
-              
-               <div class="container-fluid">
-        <div  style="margin-top: 6%"  class="row ">
-               <div class="col-sm-6 col-sm-offset-4 quote-text">
-                <div id="page1"><hr/>
-                  <div id="quotedisplay"></div>
-                   <div class="col-xs-12">
-                    <button class="button" style="float: right;" onclick="newquote()">New Quote 
-                       </button>
-                       <a href="#" data-toggle="tooltip" title="Twitt this quote!">
-                      <button class="buttons">
-                      <i class="fa fa-twitter">
-                        </i></button></a>
-                         <a style="color:#fff" href="#" data-toggle="tooltip" title="poat this quote on fb!">
-                         <button style="margin-left: 1%" class="buttons">
-                         <i class="fa fa-facebook-square"></i>  </button></a>
-                        </div></div></div></div></div>
+	<div class="row-text-center">
+	<div class="col-xs-12">
 
-                     <div class="row-text-center">
-                      <div class="col-xs-12">
-                     
-                   <div class="footer" style="color: white;text-align: center;"> By <a href="https://rupamverma.github.io/" style="color: white">Rupam</a></div></div></div>
+	<div class="footer" style="color: white;text-align: center;"> By <a href="https://rupamverma.github.io/" style="color: white">Rupam</a></div></div></div>
                   <script>
 
          
-var colors = ['#16a085', '#27ae60', '#2c3e50', '#f39c12', '#e74c3c', '#9b59b6', '#FB6964', '#342224', "#472E32", "#00994f", "#77B1A9", "#73A857"];
+	var colors = ['#16a085', '#27ae60', '#2c3e50', '#f39c12', '#e74c3c', '#9b59b6', '#FB6964', '#342224', "#472E32", "#00994f", "#77B1A9", "#73A857"];
+	var quote=[
+	'"Short cuts make long delays-J.R.R. Tolkien',
+	' "No matter how hard you kick, no matter how high you get, you can\'t go all the way around-John Green',
+	' "But one of the big lessons I have learned from my journey is you can\'t please everyone, so don\'t try-Chris Colfer',
+	'"You can\'t wait around for something to become good, it either is, or isn\'t-Toni Aleo',
+	'"I am not someone who is ashamed of my past. I\'m actually really proud. I know I made a lot of mistakes, but they, in turn, were my life lessons-Drew Barrymore',
+	'"Mistakes are a part of being human. Appreciate your mistakes for what they are: precious life lessons that can only be learned the hard way-Al Franken',
+	'"Your time is limited, so don\'t waste it living someone else\'s life-Steve Jobs',
+	'"Life is inherently risky. There is only one big risk you should avoid at all costs, and that is the risk of doing nothing-Denis Waitley',
+	'"You get in life what you have the courage to ask for-Oprah Winfrey',
+	'"Life is not a problem to be solved, but a reality to be experienced-Soren Kierkegaard',
+	'"A great attitude becomes a great day which becomes a great month which becomes a great year which becomes a great life-Mandy Hale'
+	]
+	function newquote(){
+	var randomNumber=Math.floor(Math.random()*(quote.length));
+	var randomNumber_color=Math.floor(Math.random()*(colors.length));
+	document.getElementById('quotedisplay').style.color=colors[randomNumber_color];
+	document.getElementById('quotedisplay').innerHTML=quote[randomNumber];
 
- 
-var quote=[
-'"Short cuts make long delays-J.R.R. Tolkien',
-' "No matter how hard you kick, no matter how high you get, you can\'t go all the way around-John Green',
-' "But one of the big lessons I have learned from my journey is you can\'t please everyone, so don\'t try-Chris Colfer',
-'"You can\'t wait around for something to become good, it either is, or isn\'t-Toni Aleo',
-'"I am not someone who is ashamed of my past. I\'m actually really proud. I know I made a lot of mistakes, but they, in turn, were my life lessons-Drew Barrymore',
-'"Mistakes are a part of being human. Appreciate your mistakes for what they are: precious life lessons that can only be learned the hard way-Al Franken',
-'"Your time is limited, so don\'t waste it living someone else\'s life-Steve Jobs',
-'"Life is inherently risky. There is only one big risk you should avoid at all costs, and that is the risk of doing nothing-Denis Waitley',
-'"You get in life what you have the courage to ask for-Oprah Winfrey',
-'"Life is not a problem to be solved, but a reality to be experienced-Soren Kierkegaard',
-'"A great attitude becomes a great day which becomes a great month which becomes a great year which becomes a great life-Mandy Hale'
-]
-function newquote(){
-var randomNumber=Math.floor(Math.random()*(quote.length));
-var randomNumber_color=Math.floor(Math.random()*(colors.length));
-document.getElementById('quotedisplay').style.color=colors[randomNumber_color];
-document.getElementById('quotedisplay').innerHTML=quote[randomNumber];
-
-$(document).ready(function(){
-  $('body').css("background", colors[ randomNumber_color]);   
-  $('button') .css("background-color", colors[randomNumber_color]);        
-           
- 
-
-});
+	$(document).ready(function(){
+	  $('body').css("background", colors[ randomNumber_color]);   
+	  $('button') .css("background-color", colors[randomNumber_color]);        
 
 
-}
 
-</script>
+	});
 
 
-</body>
-</html>
+	}
+
+	</script>
+
+
+	</body>
+	</html>
