@@ -1,0 +1,240 @@
+      
+      .navbar-brand{
+      background-color: #34495e;
+      width:90px;
+      }
+       .navbar{
+          margin-bottom: 0!important;
+      }
+
+      .navbar-brand{
+      background-color: #34495e;
+      width:90px;
+      }
+      .dropdown.navbar-nav>.dropdown-toggle{
+      color: #fff;
+      } .dropdown-menu li a>h2{
+      border: 1px solid #d35400;
+      border-radius: 50%;
+      background-color: #d35400;
+      border-width: 5px;
+      border- height: 5px;
+      float: left;
+      color: #fff;
+    }.dropdown-menu{
+      width: 200px;
+    }
+   
+      div.icon-bar {
+      width: 90px;
+      background-color: #2c3e50;
+      padding-bottom: 200px;
+      }.dropdown:hover{
+      background-color: #16a085;
+      } 
+      .icon-bar a {
+      display: block;
+      text-align: center;
+      padding: 25px;
+      transition: all 0.3s ease;
+      color: white;
+      font-size: 36px;
+      margin-right: 20px;
+      }
+     .icon-bar a:hover {
+      color: #16a085;
+      }
+      .active {
+      color: #16a085 !important;
+      }
+     .icon>[class^="icon-"], [class*=" icon-"]{
+      padding-bottom: 400px;
+      }
+      .menu-container{
+      background-color:  #2c3e50;width: 100%;height: 50px
+
+      }.animation-body{
+      margin-top: 10%;
+      }.animation-heading{
+      text-align: center;
+      }
+      .progressionbar li{
+      list-style-type: none;
+      width: 33.33%;
+      float: left;
+      position: relative;
+      }
+      .progressionbar li >span{
+      width: 2.5em;
+      height: 2.5em;
+      border:2px solid transparent;
+      display: block;
+      text-align: center;
+      margin: 0 auto 10px auto;
+      border-radius: 50%;
+      padding-top: 10%;
+      background-color: white;
+      box-shadow: rgba(0, 0, 0, 0.792157) 3px 3px 3px 0;
+      }
+      .progressionbar li:after{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 6px;
+      background-color: white;
+      top: 35%;
+      left: -50%;
+      z-index: -1;
+      }.progressionbar ul .fs1 li span~h3{
+      text-align: center;
+      margin-top: 10%;
+      } .fs1{
+      font-size: 52px;
+      }
+      .icon-gift{
+      animation-duration: 10s;
+      animation-name: example1;
+      animation-iteration-count: infinite;
+      animation-delay:2s;
+      }
+      .gift-line+li::after{
+      animation-duration: 10s;
+      animation-name: example11;
+      animation-iteration-count: infinite;
+      animation-delay:2s;
+      }
+      .icon-truck{
+      animation-duration: 10s;
+      animation-name: example2;
+      animation-iteration-count: infinite;
+      animation-delay:2s;
+
+      }.car-line+li::after{
+      animation-duration: 10s;
+      animation-name: example12;
+      animation-iteration-count: infinite;
+      animation-delay:2s;
+      }
+      .icon-profile-male{
+      animation-name: example3;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-delay: 2s;
+      }@-webkit-keyframes example11 {
+      0% {
+
+      background-color: white;
+      }
+      100% {
+
+      background-color: #f1c40f;
+      }
+
+      }@-webkit-keyframes example12 {
+      0% {
+
+      background-color: white;
+      }
+      100% {
+
+      background-color: #f1c40f;
+      }}
+      @-webkit-keyframes example1 {
+      0% {
+      transform: scale(0.1);
+      opacity: 0;
+      background-color: white;
+      }
+      12% {
+      transform: scale(1.2);
+      opacity: 1;
+      }
+      20% {
+      transform: scale(1);
+      background-color: #f1c40f;
+      }
+      100% {
+      transform: scale(1);
+      background-color: #f1c40f;
+      }}
+      @-webkit-keyframes example2 {
+      0% {
+      transform: scale(1);
+      opacity: 1;
+      background-color: white;
+      }
+      29% {
+      transform: scale(1);
+      opacity: 1;
+      background-color: white;
+      }
+      30% {
+      transform: scale(0.1);
+      opacity: 0;
+      background-color: white;
+      }
+      42% {
+      transform: scale(1.2);
+      opacity: 1;
+      }
+      50% {
+      transform: scale(1);
+      background-color: #f1c40f;
+      }
+      100% {
+      transform: scale(1);
+      background-color: #f1c40f;
+      }}
+
+      @-webkit-keyframes example3 {
+      0% {
+      transform: scale(1);
+      opacity: 1;
+      background-color: white;
+      }
+      59% {
+      transform: scale(1);
+      opacity: 1;
+      background-color: white;
+      }
+      60% {
+      transform: scale(0.1);
+      opacity: 0;
+      background-color: white;
+      }
+      72% {
+      transform: scale(1.2);
+      opacity: 1;
+      }
+      80% {
+      transform: scale(1);
+      background-color: #f1c40f;
+      }
+      100% {
+      transform: scale(1);
+      background-color: #f1c40f;
+      }}
+     @media only screen and (min-width: 240px) and (max-width: 767px){
+      .progressionbar li{
+      width:25%;
+      }.progressionbar li >span{
+
+      width: 2em;
+      height:2em;
+      } .icon-gift,.icon-truck,.icon-profile-male{
+      font-size: 22px;
+
+      }.progressionbar li >span{
+      padding-top:10px;
+      }.progressionbar li:after{
+
+      top: 22%;}.animation-heading{
+      margin-left:20%;
+      }.progressionbar{
+      margin-left:15%;
+      }.icon>[class^="icon-"], [class*=" icon-"]{
+      padding-bottom: 200px;
+      }.dropdown-menu li a h2>h6{
+        color: #fff;
+      }
+      }
