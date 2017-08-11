@@ -19,9 +19,7 @@
     height: 100%;
 }
 @media(max-width: 768px){
-	#logo img{
-		width: 12%;
-	}
+	
 	#counter .countdown{
 		font-size: 1.4em !important;
 	}
@@ -44,7 +42,7 @@
 }
 @media(min-width: 321px) and (max-width: 568px){
 	#logo img{
-		width: 10%;
+		width: 12%;
 	}
 }
 #logo img{
