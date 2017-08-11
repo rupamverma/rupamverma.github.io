@@ -27,14 +27,24 @@
 	}
 	#icon .fa{
 		margin: 10px 0 0;
-		font-size: 2em;
+		font-size: 2em ;
 	}.myDiv .bg {
 		 background: url(img_2.jpg) center center;
+		position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+		 opacity: .6;
+    width: 100%;
+    background-size: cover;
+    height: 100%;
 	}
 }
 @media(min-width: 321px) and (max-width: 568px){
 	#logo img{
-		width: 5%;
+		width: 10%;
 	}
 }
 #logo img{
@@ -44,6 +54,7 @@
 #intro h1,h3,p{
 	text-align: center;
 	font-family: 'Josefin Sans', sans-serif;
+	color:#333;
 	}
 	#intro h3,p{
 		font-family: 'Just Another Hand', cursive;
@@ -51,7 +62,7 @@
 	}
 	#counter .countdown{
 		text-align: center;
-		color:#000;
+		color:#333;
 		font-family: 'Amatica SC', cursive;
 		font-size: 3em;
 		margin:-15px 0 0;
