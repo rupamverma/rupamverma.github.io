@@ -20,7 +20,7 @@
 }
 @media(max-width: 768px){
 	#logo img{
-		width: 7%;
+		width: 12%;
 	}
 	#counter .countdown{
 		font-size: 1.4em !important;
@@ -28,6 +28,8 @@
 	#icon .fa{
 		margin: 10px 0 0;
 		font-size: 2em;
+	}.myDiv .bg {
+		 background: url(img_2.jpg) center center;
 	}
 }
 @media(min-width: 321px) and (max-width: 568px){
