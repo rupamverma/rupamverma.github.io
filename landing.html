@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Amatica+SC:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style_landing.css">
+  <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
+  <title></title>
+
+</head>
+<body>
+<div class="myDiv">
+ <div class="bg"></div>
+<section id="logo">
+<div class="container">
+ <div class="row">
+   <div class="col-md-12 text-center">
+    <img src="img.jpg" class=" img-fluid img-rounded" width="10%" />
+</div>
+</div>
+</div>
+  </section>
+  <section id="intro">
+    <div class="container">
+     <div class="row">
+      <div class="col-md-12">
+      <h1><b> Morning Hunger Online Delivery</b></h1>
+<h3>Healthy & Testy</h3>
+      <p>We are working hard...We ll be ready to launch in...</p>
+      </div>
+     </div>
+    </div>
+  </section>
+  <section id="counter">
+    <div class="container">
+     <div class="row">
+      <div class="col-md-12">
+      <div class="countdown">
+      </div>
+      </div>
+     </div>
+    </div>
+  </section>
+  <section id="icon">
+    <div class="container">
+     <div class="row">
+      <div class="col-md-12">
+      <ul class="list-inline">
+      <a href="http://www.twitter.com" target="_blank"><li><i class="fa twitter fa-twitter-square fa-3x" aria-hidden="true"></i></li></a>
+       <a href="http://www.facebook.com" target="_blank"><li><i class="fa facebook fa-facebook-square fa-3x" aria-hidden="true"></i></li></a>
+        <a href="http://www.google.com" target="_blank"><li><i class="fa google fa-google-plus-square fa-3x" aria-hidden="true"></i></li></a>
+         <a href="http://www.instagram.com" target="_blank"><li><i class="fa instagram fa-instagram fa-3x" aria-hidden="true"></i></i></li></a>
+      </ul>
+      </div>
+     </div>
+    </div>
+  </section>
+  <section id="sign-up">
+    <div class="container">
+     <div class="row">
+      <div class="col-md-12">
+      <form class="form-inline" role="form" method="post" action="#sign-up" name="registration">
+      <input type="type" id="email" class="form-control form-control-sm" name="email" placeholder="Enter your Email"/>
+      <button type="submit" class="btn btn-signup btn-sm" name="submit" value="Send">find out more</button>
+      </form>
+      </div>
+     </div>
+    </div>
+  </section></div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.countdown.js"></script>
+
+<script type="text/javascript">
+  
+   $(function() {
+    $('.countdown').countdown({
+        date: "Novmber 6, 2017 15:03:26"
+    });
+    function validate(email){
+    
+    var mailformat =  /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    return mailformat.test(email);
+  }
+
+  $("form").on("submit",function(e){
+    var email = $("#email").val();
+
+     if(email==''){
+     
+    $("#email").parent().after("<div class='validation text-danger'style='margin-bottom: 20px;font-size:18px'><i class='fa fa-exclamation-triangle' aria-hidden='true'></i> &nbsp;Please enter email address</div>");
+                 e.preventDefault();
+    
+       
+                }
+
+     else if (!validate($("#email").val())) {
+           $("#email").parent().after("<div class='validation text-danger' style='margin-bottom: 20px;font-size:18px'><i class='fa fa-exclamation' aria-hidden='true'></i>&nbspPlease enter correct Email-id</div>");
+                 e.preventDefault();
+        }else {
+           $("#email").parent().after("<div class='validation' style='color:green;margin-bottom: 20px;font-size:18px'><i class='fa fa-check' aria-hidden='true '></i> &nbspThank You we'll keep you upadate.</div>");
+                 e.preventDefault();
+                 $('#email').focus();   
+                 }    
+                 $("#email") .val(''); 
+        
+          
+    
+  });
+  
+});
+</script>
+</body>
+</html>
