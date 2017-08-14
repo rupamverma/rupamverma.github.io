@@ -318,10 +318,10 @@
       width:32%;
       }.progressionbar li >span{
 
-      width: 3em;
-      height:3em;
+      width: 2.5em;
+      height:2.5em;
       } .watch,.girl,.smiley{
-      font-size: 35px;
+      font-size: 32px;
 
       }.progressionbar li >span{
       padding-top:10px;
@@ -338,7 +338,7 @@
     margin: 12px 0 0;
     font-size: 2em;
   }#about .container{
-          padding-top:65%;
+          padding-top:70%;
           }
           .fs1 li .watch img{
          width:42px;
