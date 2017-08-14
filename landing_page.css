@@ -353,6 +353,41 @@
                 }h1.Service-headline{
           font-size: .5em;
         }
+}@media(min-width: 321px) and (max-width: 568px){
+  .progressionbar li{
+      width:25%;
+      }.progressionbar li >span{
+
+      width: 2em;
+      height:2em;
+      } .watch,.girl,.smiley{
+      font-size: 26px;
+
+      }.progressionbar li >span{
+      padding-top:10px;
+      }.progressionbar li:after{
+
+      top: 35%;}#footer h3{
+          font-size:15px;
+        }
+  #counter .countdown{
+    font-size: 1.4em !important;
+  }
+  #icon .fa{
+    margin: 10px 0 0;
+    font-size: 2em;
+  }#about .container{
+          padding-top:70%;
+          }
+          .fs1 li .watch img{
+         width:30px;
+        }.fs1 li .girl img{
+         width:30px;
+         height: 30px;
+        }.fs1 li .smiley img{
+         width:30px;
+        }
+  
 }
 
       
