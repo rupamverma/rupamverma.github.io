@@ -90,7 +90,7 @@
         font-family: 'Open Sans', sans-serif;
         }#footer{
         font-family: 'Open Sans', sans-serif;
-
+        margin-left: 10%;
          }
         .progressionbar li{
         list-style-type: none;
@@ -349,7 +349,7 @@
         }.fs1 li .smiley img{
          width:42px;
         }.navbar-toggle{
-                color:#34495e;
+                background-color:#34495e;
                 }h1.Service-headline{
           font-size: .5em;
         }
