@@ -329,12 +329,9 @@
       padding-top:10px;
       }.progressionbar li:after{
 
-      top: 22%;}.progressionbar{
-      margin-left:15%;
-      }.fs1 li img{
-         width:40px;
-        }#footer{
-          font-size:15px;
+      top: 22%;}
+                #footer{
+          font-size:10px;
         }
   #counter .countdown{
     font-size: 1.4em !important;
@@ -343,15 +340,15 @@
     margin: 10px 0 0;
     font-size: 2em;
   }#about .container{
-          padding-top:40%;
+          padding-top:60%;
           }
           .fs1 li .watch img{
-         width:20px;
+         width:30px;
         }.fs1 li .girl img{
-         width:20px;
-         height: 20px;
+         width:30px;
+         height: 30px;
         }.fs1 li .smiley img{
-         width:20px;
+         width:30px;
         }
 }
 
