@@ -315,13 +315,13 @@
         }
         @media only screen and (min-width: 240px) and (max-width: 767px){
       .progressionbar li{
-      width:30%;
+      width:32%;
       }.progressionbar li >span{
 
-      width: 2.5em;
-      height:2.5em;
+      width: 3em;
+      height:3em;
       } .watch,.girl,.smiley{
-      font-size: 30px;
+      font-size: 35px;
 
       }.progressionbar li >span{
       padding-top:10px;
@@ -329,7 +329,7 @@
 
       top: 30%;}
                 #footer ul li h3{
-          font-size:10px;
+          font-size:18px;
         }
   #counter .countdown{
     font-size: 1.4em !important;
@@ -338,15 +338,15 @@
     margin: 12px 0 0;
     font-size: 2em;
   }#about .container{
-          padding-top:70%;
+          padding-top:65%;
           }
           .fs1 li .watch img{
-         width:40px;
+         width:42px;
         }.fs1 li .girl img{
-         width:40px;
-         height: 40px;
+         width:42px;
+         height: 42px;
         }.fs1 li .smiley img{
-         width:40px;
+         width:42px;
         }
 }
 
