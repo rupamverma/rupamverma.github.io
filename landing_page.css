@@ -77,8 +77,6 @@
         font-size: 18px;
 
         }h1.head{
-        text-align:justify;
-        text-justify:inter-word;
         font-family: 'Titillium Web', sans-serif;
         }
         h1.Service-headline{
@@ -329,26 +327,26 @@
       padding-top:10px;
       }.progressionbar li:after{
 
-      top: 22%;}
-                #footer{
+      top: 30%;}
+                #footer ul li h3{
           font-size:10px;
         }
   #counter .countdown{
     font-size: 1.4em !important;
   }
   #icon .fa{
-    margin: 10px 0 0;
+    margin: 12px 0 0;
     font-size: 2em;
   }#about .container{
-          padding-top:60%;
+          padding-top:70%;
           }
           .fs1 li .watch img{
-         width:30px;
+         width:40px;
         }.fs1 li .girl img{
-         width:30px;
-         height: 30px;
+         width:40px;
+         height: 40px;
         }.fs1 li .smiley img{
-         width:30px;
+         width:40px;
         }
 }
 
