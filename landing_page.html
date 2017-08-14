@@ -208,7 +208,7 @@
 		<div>We are pleased to invite you to celebrate with us on Novmber 6th 2017 at our location with a free dinner at 6:00pm.We understand your needs and we will provide the food to satisfy the biggerst criteria of you all, both healthy and tasty. Do not hesitate to contact us.</div>
 		<div class="w3-text-blue-grey w3-large"><b>Morning Hunger Online Delivery, water tank Btm 1st stage, 590029 Bengaluru,Karnataka,India</b></div>
 		<h3>You can also contact us by phone 000000-2323 or email morning@hunger.com, or you can send us a message here:</h3>
-		<form action="/action_page.php" target="_blank">
+		<form action="#">
 		<div><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></div>
 		<div><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required name="People"></div>
 		<div><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></div>
@@ -236,7 +236,7 @@
 		return mailformat.test(email);
 		}
 
-		$("form").on("submit",function(e){
+		$("#sign-up").on("submit",function(e){
 		var email = $("#email").val();
 
 		if(email==''){
