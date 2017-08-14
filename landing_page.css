@@ -81,6 +81,7 @@
         }
         h1.Service-headline{
           font-size: .8em;
+          font-family: 'Titillium Web', sans-serif;
         }
         #Service ,.service-headline{
         text-align: center;
@@ -348,8 +349,10 @@
         }.fs1 li .smiley img{
          width:42px;
         }.navbar-toggle{
-                color:red;
-                }
+                color:#34495e;
+                }h1.Service-headline{
+          font-size: .5em;
+        }
 }
 
       
