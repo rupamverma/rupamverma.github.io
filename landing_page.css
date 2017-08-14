@@ -279,6 +279,8 @@
           border-radius: 50%;
         }#menu h3{
           padding-top: 8%;
+        }#menu img:hover{
+          opacity: .6;
         }
        #menu,.fa-thumbs-o-up,.fa-share, .fa-first-order{
         padding: 3px;
