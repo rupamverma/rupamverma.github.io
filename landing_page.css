@@ -353,32 +353,7 @@
                 }h1.Service-headline{
           font-size: .5em;
         }
-}@media(min-width: 321px) and (max-width: 568px){
-  .progressionbar li{
-      width:20%;
-      }.progressionbar li >span{
-
-      width: 1.5em;
-      height:1.5em;
-      } .watch,.girl,.smiley{
-      font-size: 20px;
-
-      }.progressionbar li:after{
-
-      top: 35%;}#footer h3{
-          font-size:15px;
-        }
- 
-
-          .fs1 li .watch img{
-         width:30px;
-        }.fs1 li .girl img{
-         width:30px;
-         height: 30px;
-        }.fs1 li .smiley img{
-         width:30px;
-        }
-  
 }
+
 
       
