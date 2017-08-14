@@ -327,9 +327,9 @@
       padding-top:10px;
       }.progressionbar li:after{
 
-      top: 30%;}
+      top: 32%;}
                 #footer ul li h3{
-          font-size:18px;
+          font-size:16px;
         }
   #counter .countdown{
     font-size: 1.4em !important;
@@ -347,7 +347,9 @@
          height: 42px;
         }.fs1 li .smiley img{
          width:42px;
-        }
+        }.navbar-toggle{
+                color:red;
+                }
 }
 
       
