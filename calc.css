@@ -101,6 +101,8 @@ margin-left: 16px;
 }@media only screen and (min-width: 240px) and (max-width: 767px){
 	h1.head-line{
 		font-size:1.6em;
+	}#calculator{
+		margin-top:5%;
 	}
   
 }
