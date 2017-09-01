@@ -97,7 +97,7 @@ margin-left: 16px;
 	font-size: 1.2em;
 }@media only screen and (min-width: 240px) and (max-width: 767px){
 	.head-line{
-		font-size:1em;
+		font-size:.6em;
 	}
   
 }
