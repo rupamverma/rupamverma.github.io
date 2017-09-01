@@ -85,6 +85,9 @@ margin-left: 16px;
 		#keys:active {
   transform: translate(0px, 3px);
   box-shadow: none;
+}#equal:active {
+  transform: translate(0px, 3px);
+  box-shadow: none;
 }h5,h5.sub-head{
 	display: inline-block;
 }
