@@ -1,0 +1,100 @@
+body{
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
+  background-color: #ecf0f1;
+}
+	
+	#calculator{
+	background-color: #3a3a3a;
+	height: 430px;
+    width: 300px;
+	margin-top: 4%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 20px;
+	border:2px solid #3a3a3a;
+	box-shadow: 7px 10px 34px 1px rgba(0, 0, 0, 0.68), inset -1px -6px 12px 0.1px #3a3a3a;
+	margin-bottom: 4%;
+}
+  #display{
+  	margin-bottom: 20px;
+  	height: 65px;
+  	width: 85%;
+  	border: 1px solid #b4b39d;
+  	border-radius: 6px;
+  	box-shadow: 0px 0px 1px black;
+  	background-color: #c3c2ab;
+  	margin-left: 20px;
+  	text-align: right;
+  	font-size: 20px;
+ }#button{
+  	width: 280px;
+  	height: auto;
+  	font-size: 16px;
+  	font-weight: bold;
+  	position: absolute;
+  	display: inline-block;
+  	margin-top: 15px;
+  	margin-left: 15px;
+  }
+  #keys{
+    width: 50px;
+    height: 40px;
+    margin: 0 4px 10px 8px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 3px 0px 0px #222121, inset -1px -3px 10px 1px #515151;
+    background-color: #dfd8d0;
+    outline: none;
+
+  }
+   #equal{
+    width: 118px;
+    height: 40px;
+    margin: 0 4px 10px 8px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 3px 0px 0px #222121, inset -1px -3px 10px 1px #515151;
+    background-color: #dfd8d0;
+    outline: none;
+
+  }#button>.red {
+  font-size: 14px;
+  background-color: #a72d45;
+  box-shadow: 0px 3px 0px 0px #671c2a;
+  color: #fff;
+}#button>.blue {
+  font-size: 14px;
+  background-color: #3498db;
+  box-shadow: 0px 3px 0px 0px #2c3e50;
+  color: #fff;
+}h5{
+		color:#fff;
+		font-weight: bold;
+		padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1.5em;
+margin-left: 16px;
+  text-shadow: 2px 3px 4px #000;
+	}
+	h5.sub-head{
+		 font-size:.9em;
+		 margin-left: 30px;
+
+
+		}
+		#keys:active {
+  transform: translate(0px, 3px);
+  box-shadow: none;
+}h5,h5.sub-head{
+	display: inline-block;
+}
+.head-line{
+	margin-top: 5%;
+	  text-shadow: 2px 4px 5px #fff;
+	  font-family: 'PT Serif', serif;
+}#footer{
+	font-family: 'Handlee', cursive;
+	font-size: 1.2em;
+}@media only screen and (min-width: 240px) and (max-width: 767px){
+  
+}
