@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed|Handlee|PT+Serif" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="calc.css">
+<meta charset="utf-8">
+	<title>Calculator
+	</title>
+</head>
+<style type="text/css">
+	body{
+	
+</style>
+<body>
+
+   <div class="container">
+   <div class="row">
+   <div class="col-xs-12">
+   <h1 class="text-center head-line">Javascript Calculator</h1>
+    <div id="calculator">
+   <div  id='title'>
+   <h5><b>CASIO</b>
+   <h5 class="sub-head"> ELECTRONIC CALCULATOR</h5>
+</div>
+     <form>
+     <input type="text" id="display"><br>
+     <div id="button">
+      <input type="button" class="red" value="AC" id="keys" onclick='addToScreen("ac")'>
+       <input type="button" class="blue" value="CE" id="keys" onclick='backSpace()''>
+       <input type="button" value="x^2" id="keys" onclick='power()'>
+        <input type="button" value="+" id="keys" onclick='addToScreen("+")'>
+        <br>
+         <input type="button" value="9" id="keys" onclick='addToScreen("9")'>
+          <input type="button" value="8" id="keys" onclick='addToScreen("8")'>
+           <input type="button" value="7" id="keys" onclick='addToScreen("7")'>
+            <input type="button" value="-" id="keys" onclick='addToScreen("-")'>
+            <br>
+             <input type="button" value="6" id="keys" onclick='addToScreen("6")'>
+              <input type="button" value="5" id="keys" onclick='addToScreen("5")'>
+               <input type="button" value="4" id="keys" onclick='addToScreen("4")'>
+                <input type="button" value="*" id="keys" onclick='addToScreen("*")'>
+                <br>
+                 <input type="button" value="3" id="keys" onclick='addToScreen("3")'>
+                  <input type="button" value="2" id="keys" onclick='addToScreen("2")'>
+                   <input type="button" value="1" id="keys" onclick='addToScreen("1")'>
+                    <input type="button" value="/" id="keys" onclick='addToScreen("/")'><br>
+                    <input type="button" value="0" id="keys" onclick='addToScreen("0")'>
+                     <input type="button" value="." id="keys" onclick='addToScreen(".")'>
+                      <input type="button" value= "=" id="equal" onclick= 'answer()'>
+                 </form>
+             </div>
+          </div>
+          </form>
+          </div></h5>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
+          <footer class="text-center">
+          	<h6 id="footer">Designed and coded by <a href="rupamverma.github.io" target="_blank">Rupam</a></h6>
+          </footer>
+          </div>
+          <script>
+          var screen = document.getElementById('display');
+          function addToScreen(x){
+          screen.value +=x;
+          if(x==='ac'){
+          	screen.value = "";
+          } 
+      }
+          function answer(x){
+          	x=screen.value;
+          	x = eval(x);
+          	screen.value = x;
+          }
+          function power(){
+          	x = screen.value;
+          	x = eval(x*x);
+          	screen.value = x;
+          }
+          function backSpace(){
+          	var num = screen.value;
+          	var new_num = num.substring(0,num.length-1);
+          	screen.value = new_num;
+
+          }
+          </script>
+      </body>
+</html>
