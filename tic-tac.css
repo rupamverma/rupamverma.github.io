@@ -1,0 +1,101 @@
+body{
+		font-family: 'Cairo', sans-serif;
+
+	}
+.headline{
+  font-family: 'Libre Baskerville', serif;
+}
+#select-board{
+  width: 750px;
+  height:500px;
+  background-color:#8D6E63;
+  margin-left:180px;
+  margin-top:4%;
+  border-radius:15px;
+  text-align:center;
+  box-shadow: 7px 10px 34px 1px rgba(0,0,0,0.68), inset -1px -6px 12px 0.1px #3a3a3a;
+  color:#fff;
+}
+.sub-headline{
+  padding:4%;
+  font-size:3em;
+  background-color:#3E2723;
+  text-shadow: 1px 1px 2px #fff, 0 0 25px black, 0 0 5px darkblue;
+  border-radius:10px;
+}
+.btn-btn{
+  padding:25px;
+  color:#000;
+  margin:40px;
+  font-size:3em;
+  border-radius:10px;
+  border:none;
+  box-shadow: 0px 0px 3px 0px #1B5E20 , inset -1px -3px 10px 1px #3E2723;
+}
+  #tic-tac-toe{
+  display: none;
+  width: 750px;
+	   height: 500px;
+	   background-color: #616161;
+	   margin-left: 300px;
+	   margin-top: 4%;
+	   border-radius: 15px;
+	   box-shadow: 7px 10px 34px 1px rgba(0, 0, 0, 0.68), inset -1px -6px 12px 0.1px #3a3a3a;
+	   text-align: center;
+	    color: #fff;
+       }
+td{
+  border: 2px solid #fff;
+  width:100px;
+  height:100px;
+  text-align:center;
+  cursor:pointer;
+  font-size:70px;
+  vertical-align:middle;
+  
+ 
+}
+table{
+  border-collapse:collapse;
+  position:absolute;
+  left:50%;
+  margin-left:-150px;
+ color: #fff;
+  margin-top:8%;
+  
+}
+table tr:first-child td{
+  border-top:0;
+}table tr:last-child td{
+  border-bottom:0;
+}
+table tr td:first-child {
+  border-left:0;
+}table tr td:last-child {
+  border-right:0;
+}
+.game-end{
+  display:none;
+  width:200px;
+  top:280px;
+  left:50%;
+  margin-left:-100px;
+  position:absolute;
+  background-color: rgba(205,133,63,0.8);
+  padding-top:50px;
+  padding-bottom:50px;
+  text-align:center;
+  border-radius:5px;
+  color:#fff;
+  font-size: 2em;
+}
+.restart{
+  background-color:#E64A19;
+  border-radius:5px;
+  border:none;
+  font-size:.8em;
+  
+}
+
+  
+  
