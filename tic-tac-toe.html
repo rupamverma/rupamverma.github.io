@@ -65,7 +65,7 @@
 
 		$(document).ready(function(){
 		  $(".btn-btn").click(function(x){
-		    $("#tic-tac-toe").fadeIn(3000);
+		    $("#tic-tac-toe").fadeIn(2000);
 		    x = $(this).html();
 		    if (x==human){
 		      huPlayer = human;
@@ -92,7 +92,7 @@
 		 gameStart();
 		function gameStart(){
 		  $("#tic-tac-toe").hide();
-		  $("#select-board").fadeIn(3000);
+		  $("#select-board").fadeIn(2000);
 		  document.querySelector(".game-end").style.display = "none";
 		  ticTacBoard = Array.from(Array(9).keys());
 		 
