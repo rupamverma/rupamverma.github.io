@@ -99,12 +99,12 @@ table tr td:first-child {
 }
  @media only screen and (min-width: 240px) and (max-width: 767px){
    #select-board{
-     width:380px;
+     width:100%;
      margin-left:0px;
      height:500px;
    }
    #tic-tac-toe{
-     width:400px;
+     width:100%;
      margin-left:5px;
      height:500px;
      }
