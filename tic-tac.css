@@ -101,16 +101,16 @@ table tr td:first-child {
    #select-board{
      width:100%;
      margin-left:0px;
-     height:400px;
+     height:430px;
    }
    #tic-tac-toe{
      width:100%;
      margin-left:5px;
-     height:400px;
+     height:430px;
      }
      .game-end{
        top:140px;
-       left:38%;
+       left:50%;
        }
  
 .headline{
