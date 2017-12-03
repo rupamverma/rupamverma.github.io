@@ -11,144 +11,180 @@
 </head>
 <style type="text/css">
 	#main-board{
-		height: 900px;
-		width: 600px;
-		 margin: 50px auto;
-}
-	.red{
-		background-color: #FF4081;
-	}
-	.red-active {
-  background-color: #F50057 !important;
-}
-	.yellow{
-		background-color: #FFCA28;
-	}
-	.yellow-active {
-  background-color: #FFEB3B !important;
-}
-	.green{
-		background-color: #43A047;
-	}
-	.green-active {
-  background-color: darkgreen !important;
-}
-	.blue{
-		background-color: #7E57C2;
-	}
-	.blue-active {
-  background-color: #651FFF !important;
-}
-	.button{
-		width: 300px;
+  height:900px;
+  width:600px;
+  margin:50px auto;
+  }
+.touch{
+    width: 300px;
 		height: 300px;
 		cursor: pointer;
-		float: left;
 		border-radius: 2px;
 		border: 10px solid #4E342E;
-       }
-       
-       #panel{
-       	width: 300px;
-       	height: 200px;
-       	background-color: pink;
-       	margin-top: -380px;
-       	margin-left: 150px;
-       	position: absolute;
-       	border-radius: 10px;
-       	border: 6px solid  #4E342E;
-       }
-       .clear{
-       	clear: both;
-       }
-       .play-btn{
-       	width: 50px;
-       	height: 40px;
-       	border: 2px solid red;
-       	padding-top: 3px;
-       	margin-top: 8px;
-       	margin-right: 10px;
-       	margin-left: 30px
-       	
-       }
-       .start{
-       	float: left;
-       }
-        .btn{
-        	margin-left: 18px;
-        	font-weight: bold;
-        }
-        .headline{
-        	text-align: center;
-        }
-        #count{
-        	border: 4px solid red;
-        	border-radius: 2px;
-        	text-align: center;
-        	font-size: 1.6em;
-        	padding-top: 0px;
-        	font-weight: bold;
-        	background-color: skyblue;
-        }
-        #start{
-        	border: 3px solid black;
-        	background-color: red;
-        	border-radius: 50px;
-        }
-         #strict{
-        	border: 3px solid black;
-        	background-color: yellow;
-        	border-radius: 50px;
-        }
-        .square{
-        	border: 4px solid black;
-        	width: 25px;
-        	height: 25px;
-        	margin-left: 80px;
-        	background-color: red;
-        	
-        }
-        .start-btn{
-        	border: 2px solid #333;
-        	width: 100px;
-        	height: 30px;
-        	text-align: center;
-        	margin-left: 130px;
-        	background-color: grey;
-        	
-        }
-        .dis{
-        	float: left;
-        	position: absolute;
-        	
-        }
-        .square-on{
-        	background-color: green;
-        }
+    float:left;
+   
+}
+
+.pink{
+  background-color: #FF4081;
+}
+.pink-active {
+  background-color: #F50057 !important;
+}
+.yellow{
+  background-color: #FFCA28;
+}
+.yellow-active {
+  background-color: #FFEB3B !important;
+}
+.green{
+  background-color:#43A047;
+}
+.green-active {
+  background-color: darkgreen !important;
+}
+.blue{
+  background-color:#7E57C2;
+}
+.blue-active {
+  background-color: #651FFF !important;
+}
+.clear{
+  clear:both;
+}
+#panel{
+  width:300px;
+  height:200px;
+  position:absolute;
+  margin-left:150px;
+  margin-top:-380px;
+ border: 6px solid  #4E342E;
+  background-color:#fff;
+  border-radius:10px;
+}
+#count{
+  background-color:#FF7043;
+  border-radius:2px;
+}
+#start{
+ background-color:red;
+  border-radius:50px;
+}
+#strict{
+  background-color:yellow;
+  border-radius:50px;
+}
+.play-btn{
+  float:left;
+  border:2px solid #000;
+  width:50px;
+  height:40px;
+  margin-left:30px;
+  text-align:center;
+  font-weight:bold;
+  
+  font-size:1.5em;
+}
+.headline{
+  text-align:center;
+}
+.btn{
+  margin-left:18px;
+  
+}
+.square-box{
+  border: 4px solid black;
+  width: 30px ;
+  height: 30px;
+  margin-left: 60px;
+  background-color: red;
+  border-radius:50px;}
+.inline{
+  float:left;
+  
+}
+.start-btn{
+  margin-left:20px;
+  width:120px;
+  height:30px;
+  text-align:center;
+  padding:0px;
+}
+button.start-btn{
+  border:none;
+  background-color:#757575;
+  border-radius:2px;
+}
+.square-box-on{
+  background-color:green;
+}
+@media only screen and (min-width: 240px) and (max-width: 767px){
+  .touch{
+    width:180px;
+    height:180px;
+    
+  }
+  #main-board{
+  height:400px;
+  width:400px;
+  margin:50px auto;
+  }
+  #panel{
+  width:220px;
+  height:200px;
+  position:absolute;
+  margin-left:80px;
+  margin-top:-280px;
+ border: 6px solid  #4E342E;
+  background-color:#fff;
+  border-radius:10px;
+}
+.play-btn{
+  float:left;
+  border:2px solid #000;
+  width:30px;
+  height:36px;
+ 
+  text-align:center;
+  font-weight:bold;
+  
+  
+}
+.btn{
+  margin:0px;
+  
+}
+.square-box{
+  margin-left: 20px;}
+
+}
+
          
 </style>
 <body>
-<div class="container">
-<div class="col-xs-12">
-<div id="main-board">
-	<div id="0" class="button red"></div>
-	    <div id="1" class="button yellow"></div>
-	      <div id="2" class="button green"></div>
-	        <div id="3" class="button blue"></div>
-	         <div class="clear"></div>
-             <div id="panel">
-             <h1 class="headline">Simon</h1>
-             <div class="start play-btn" id="count">00</div>
-             <div class="start play-btn" id="start"></div>
-             <div class="start play-btn" id="strict"></div>
-              <div class="btn">Count</div>
-             <div class="btn">Start</div>
-             <div class="btn">Strict</div>
-             <div class="square dis"></div>
-             <div><button class="start-btn dis"><b class="on">ON</b><b class="off"> / OFF</b></button></div>
-             </div>
-      </div>
-   </div>
+   <div class="col-xs-12">
+     <div id="main-board">
+       <div id="0" class="touch pink"></div>
+       <div id="1" class="touch yellow"></div>
+       <div id="2" class="touch green"></div>
+       <div id="3" class="touch blue"></div>
+       <div class="clear"></div>
+       <div id="panel">
+         <h1 class="headline">Simon</h1>
+         <div class="play-btn" id="count">00</div>
+         <div class="play-btn" id="start"></div>
+         <div class="play-btn" id="strict"></div>
+         <div class="btn score">Count</div>
+         <div class="btn">Start</div>
+         <div class="btn">Strict</div>
+         <div class="square-box inline"></div>
+         <div class="inline"><button class="start-btn">
+           <b class="on-btn">ON</b><b class="off-btn">/OFF</b></button>
+         
+       </div>
+     </div>
+     
+  </div>
 </div>
 <script type="text/javascript">
 	var userPlayed = [];
