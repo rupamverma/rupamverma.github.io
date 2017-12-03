@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+	#main-board{
+		height: 900px;
+		width: 600px;
+		 margin: 50px auto;
+}
+	.red{
+		background-color: #FF4081;
+	}
+	.red-active {
+  background-color: #F50057 !important;
+}
+	.yellow{
+		background-color: #FFCA28;
+	}
+	.yellow-active {
+  background-color: #FFEB3B !important;
+}
+	.green{
+		background-color: #43A047;
+	}
+	.green-active {
+  background-color: darkgreen !important;
+}
+	.blue{
+		background-color: #7E57C2;
+	}
+	.blue-active {
+  background-color: #651FFF !important;
+}
+	.button{
+		width: 300px;
+		height: 300px;
+		cursor: pointer;
+		float: left;
+		border-radius: 2px;
+		border: 10px solid #4E342E;
+       }
+       
+       #panel{
+       	width: 300px;
+       	height: 200px;
+       	background-color: pink;
+       	margin-top: -380px;
+       	margin-left: 150px;
+       	position: absolute;
+       	border-radius: 10px;
+       	border: 6px solid  #4E342E;
+       }
+       .clear{
+       	clear: both;
+       }
+       .play-btn{
+       	width: 50px;
+       	height: 40px;
+       	border: 2px solid red;
+       	padding-top: 3px;
+       	margin-top: 8px;
+       	margin-right: 10px;
+       	margin-left: 30px
+       	
+       }
+       .start{
+       	float: left;
+       }
+        .btn{
+        	margin-left: 18px;
+        	font-weight: bold;
+        }
+        .headline{
+        	text-align: center;
+        }
+        #count{
+        	border: 4px solid red;
+        	border-radius: 2px;
+        	text-align: center;
+        	font-size: 1.6em;
+        	padding-top: 0px;
+        	font-weight: bold;
+        	background-color: skyblue;
+        }
+        #start{
+        	border: 3px solid black;
+        	background-color: red;
+        	border-radius: 50px;
+        }
+         #strict{
+        	border: 3px solid black;
+        	background-color: yellow;
+        	border-radius: 50px;
+        }
+        .square{
+        	border: 4px solid black;
+        	width: 25px;
+        	height: 25px;
+        	margin-left: 80px;
+        	background-color: red;
+        	
+        }
+        .start-btn{
+        	border: 2px solid #333;
+        	width: 100px;
+        	height: 30px;
+        	text-align: center;
+        	margin-left: 130px;
+        	background-color: grey;
+        	
+        }
+        .dis{
+        	float: left;
+        	position: absolute;
+        	
+        }
+        .square-on{
+        	background-color: green;
+        }
+         
+</style>
+<body>
+<div class="container">
+<div class="col-xs-12">
+<div id="main-board">
+	<div id="0" class="button red"></div>
+	    <div id="1" class="button yellow"></div>
+	      <div id="2" class="button green"></div>
+	        <div id="3" class="button blue"></div>
+	         <div class="clear"></div>
+             <div id="panel">
+             <h1 class="headline">Simon</h1>
+             <div class="start play-btn" id="count">00</div>
+             <div class="start play-btn" id="start"></div>
+             <div class="start play-btn" id="strict"></div>
+              <div class="btn">Count</div>
+             <div class="btn">Start</div>
+             <div class="btn">Strict</div>
+             <div class="square dis"></div>
+             <div><button class="start-btn dis"><b class="on">ON</b><b class="off"> / OFF</b></button></div>
+             </div>
+      </div>
+   </div>
+</div>
+<script type="text/javascript">
+	var userPlayed = [];
+	var simonPlayed = [];
+	const win_case = 20;
+	var id,color;
+	var point = 0;
+	var strict = false;
+	var error = false;
+	var gameStart = false;
+	var soundArr = [
+  "https://s3.amazonaws.com/freecodecamp/simonSound1.mp3", //green
+  "https://s3.amazonaws.com/freecodecamp/simonSound2.mp3", //red
+  "https://s3.amazonaws.com/freecodecamp/simonSound3.mp3", //yellow 
+  "https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" //blue   
+	];
+
+	  $(document).ready(function(){
+	  	$("#count").text("");
+	  	$("#start").click(function(){
+	  		strict = false;
+	  		error = false;
+	  		point = 0;
+	  		point++;
+	  		userPlayed = [];
+	  		simonPlayed = [];
+	  		simonBoard();
+	  		
+	  	})
+	  	$(".button").click(function(){
+          id = $(this).attr("id");
+          color = $(this).attr("class").split(" ")[1];
+          userBoard();
+
+	  	});
+	  	$("#strict").click(function(){
+	  		point = 0;
+	  		point++;
+	  		strict = true;
+	  		userPlayed = [];
+	  		simonPlayed = [];
+	  		simonBoard();
+
+	  	})
+	  	$(".start-btn").click(function(){
+	  		gameStart = (gameStart==false)?true:false;
+	  		if(gameStart){
+	  			$(".square").addClass("square-on");
+	  			$("#count").text("00");
+	  		}
+	  		else{
+	  			$(".square").removeClass("square-on");
+	  			$("#count").text("");
+
+	  		}
+
+	  	});
+
+	  });
+	   
+      function userBoard(){
+      userPlayed.push(id);
+  	console.log(id+" "+color);
+  	console.log(userPlayed);
+  	addColorActive(id,color);
+    if(!checkUserBoard()) {
+
+    	if(strict){
+          console.log("strict");  
+          simonPlayed = [];
+          point = 1;
+    	}
+    	error = true;
+       	errorOccur();
+       	userPlayed = [];
+       	simonBoard();
+
+       }
+
+  	  else if(userPlayed.length==simonPlayed.length && userPlayed.length<win_case){
+  	  	point++;
+  	  	userPlayed = [];
+  	  	error = false;
+  	  	simonBoard();
+  	  }
+  	   if(userPlayed.length==win_case){
+  	   	gameWinner();
+  	   	resetGame();
+  	   }
+      }
+	       function checkUserBoard(){
+	       	for(var i=0;i<userPlayed.length;i++){
+	       		if(userPlayed[i] != simonPlayed[i]){
+	       			return false;
+	       		}
+	       	}
+	       	return true;
+	       }
+            
+           function errorOccur() {
+  console.log("error");  
+  var counter = 0;
+  var myError = setInterval(function() {
+    $("#count").text("!!");
+    counter++;
+    if(counter == 3) {
+      $("#count").text(point);
+      clearInterval(myError);
+      userPlayed = [];
+      counter = 0;
+    }
+  }, 500);
+}
+
+
+	   function simonBoard(){
+	   	$("#count").text(point);
+	   	if(!error){
+	   		getRandomNum();
+	   	}
+	   	if(error && strict){
+	   		getRandomNum();
+	   	}
+	   	var i=0;
+	   	var simonInterval = setInterval(function(){
+          id = simonPlayed[i];
+          color = $("#"+id).attr("class").split(" ")[1];
+          console.log(id+" "+color);
+          addColorActive(id,color);
+          i++;
+          if(i==simonPlayed.length){
+          	clearInterval(simonInterval);
+          }
+	   	},1000)
+	   }
+
+	    function getRandomNum(){
+	    	var random = Math.floor(Math.random()*4);
+	    	simonPlayed.push(random);
+	    	console.log(simonPlayed);
+	    }
+	    function addColorActive(id,color){
+	    	 $("#"+id).addClass(color+"-active");
+         playSound(id);
+            setTimeout(function(){
+            $("#"+id).removeClass(color+"-active");
+          }, 500);
+   }
+     function gameWinner(){
+     	var count = 0;
+     	var winInterval = setInterval(function(){
+     		count++;
+     		$("#count").text("Win");
+     		if(count==5){
+     			clearInterval(winInterval);
+     			$("#count").text("00");
+     			count = 0;
+     		}
+
+     	},500);
+     }
+
+      function playSound(id){
+      	var sound = new Audio(soundArr[id]);
+      	sound.play();
+
+      }
+      function resetGame(){
+      	userPlayed = [];
+      	simonPlayed = [];
+      	point = 0;
+      	$("#count").text(point);
+
+      }
+
+</script>
+
+</body>
+</html>
