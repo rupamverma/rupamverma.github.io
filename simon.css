@@ -150,7 +150,7 @@ p.on{
           box-shadow: 0px 3px 0px 0px #222121, inset -1px -3px 10px 1px green;
 }
 @media only screen and (min-width: 240px) and (max-width: 767px){
-  .touch{
+   .touch{
     width:165px;
     height:205px;
     
@@ -167,8 +167,9 @@ p.on{
   position:absolute;
   margin-left:45px;
   margin-top:-300px;
-
- 
+ border: 15px solid   #455A64;
+  background-color:#fff;
+  border-radius:10px;
 }
 .play-btn{
   float:left;
@@ -178,7 +179,7 @@ p.on{
  
   text-align:center;
   font-weight:bold;
-  margin-left:20px;
+  margin-left:25px;
   
 }
 .btn{
@@ -208,6 +209,7 @@ p{
    font-size:1.2em;
  }
  body{
+  
   background-image:none;
  }
  .headline{
