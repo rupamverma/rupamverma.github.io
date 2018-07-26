@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<style type="text/css">
+		body{
+			background-color: #4b6584;
+			text-align: center;
+			min-width: 320;
+           font-family: 'Quicksand', sans-serif;
+		}
+		#Form-Outer{
+			background-color: white;
+			width: 75%;
+			max-width: 900px;
+			margin: 0 auto;
+			padding: 10px;
+			padding-top: 10px;
+			border-radius: 4px;
+		}
+		.labels{
+			display: inline-block;
+			vertical-align: top;
+			width: 40%;
+			text-align: right;
+		}
+		.rightTab
+		{
+			display: inline-block;
+			vertical-align: middle;
+			text-align: left;
+			width: 48%;
+		}
+		.input-field{
+			width: 280px;
+			height: 16px;
+			padding: 5px;
+			margin: 10px;
+			border: 1px solid #c0c0c0;
+			border-radius: 2px;
+		}
+		.userRatings, input[type="checkbox"]
+		{
+			float: left;
+			margin-right: 5px;
+		}
+		.radio,.checkbox{
+			position: relative;
+			left: -43px;
+			margin-left: 10px;
+			display: block;
+			margin-bottom: 10px;
+		}
+		.dropdown{
+			height: 34px;
+			width: 140px;
+			padding: 5px;
+			margin: 10px;
+			margin-top: 15px;
+			border: 1px solid #c0c0c0;
+			border-radius: 2px;
+		}
+		#submit
+		{
+			height: 40px;
+			width: 96px;
+			margin: 10px;
+			border: 0px solid;
+			font-size: 1em;
+			border-radius: 4px;
+			background-color: #26de81;
+			color: #fff;
+		}
+		h1{
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+<h1 id="title">Survey Form</h1>
+<div id="Form-Outer">
+	<p id="description">
+		Let us know how we can improve Modefinserver
+	</p>
+	<form id="survey-form" method="">
+		<div class="rowTab">
+			<div class="labels">
+				<label id="labelName" for="name">*Name:</label>
+			</div>
+			<div class="rightTab">
+				<input type="text" name="name" id="name" class="input-field" required="" placeholder="Enter your name">
+			</div>
+		</div>
+		<div class="rowTab">
+			<div class="labels">
+				<label id="labelEmail" for="email">*Email:</label>
+			</div>
+			<div class="rightTab">
+				<input type="text" name="email" id="email" placeholder="Enter your Email" required="" class="input-field">
+			</div>
+		</div>
+		<div class="rowTab">
+			<div class="labels">
+				<label id="labelAge" for="age">*EmpID:</label>
+			</div>
+			<div class="rightTab">
+				<input type="Number" name="age" id="Number" min="1" max="125" class="input-field" placeholder="Employee Id">
+			</div>
+		</div>
+		<div class="rowTab">
+			<div class="labels">
+				<label for="currentRole">Which option describe your current role?</label>
+			</div>
+			<div class="rightTab">
+				<select id="dropdown" name="currentRole" class="dropdown">
+					<option value="select">--Select--</option>
+					<option value="Windows">Windows Developer</option>
+					<option value="ios">ios Developer</option>
+					<option value="Android">Android Developer</option>
+					<option value="web">Web Developer</option>
+					<option value="java">Java Developer</option>
+					<option value="other">Other</option>
+				</select>
+			</div>
+		</div>
+		<div class="rowTab">
+			<div class="labels">
+				<label for="rating">How likely is that you would recommended Modefinserver to a friend?</label>
+			</div>
+			<div class="rightTab">
+				<ul style="list-style: none;">
+					<li class="radio">
+						<label>Definetely <input type="radio" name="radio-buttons" class="userRatings" value="1"></label>
+					</li>
+					<li class="radio">
+						<label>Maybe <input type="radio" name="radio-buttons" class="userRatings" value="2"></label>
+					</li>
+					<li class="radio">
+						<label>Not <input type="radio" name="radio-buttons" class="userRatings" value="3"></label>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="rowTab">
+			<div class="labels">
+				<label for="most-like">What do you like most in MFS:</label>
+			</div>
+			<div class="rightTab">
+				<select class="dropdown">
+					<option value="select">--Select--</option>
+					<option value="Environment">Work Environment</option>
+					<option value="challenges">Challenges</option>
+					<option value="Projects">Projects</option>
+					<option value="community">Community</option>
+				</select>
+			</div>
+		</div>
+		<div class="rowTab">
+			<div class="labels">
+				<label for="improve">Things that should be improved in the future<br>(Check all that apply)</label>
+			</div>
+			<div class="rightTab">
+				<ul style="list-style: none;">
+					<li class="checkbox"><label>Front-End Technology <input type="checkbox" name="prefer" value="1" class="userRatings">
+					</label>
+				</li>
+					<li class="checkbox"><label>Back-End Technology <input type="checkbox" name="prefer" value="2" class="userRatings">
+					</label>
+				</li>
+					<li class="checkbox"><label>Web Technology<input type="checkbox" name="prefer" value="1" class="userRatings">
+					</label>
+				</li>
+					<li class="checkbox"><label>Challenges<input type="checkbox" name="prefer" value="3" class="userRatings">
+					</label>
+				</li>
+					<li class="checkbox"><label>Open Source Community<input type="checkbox" name="prefer" value="4" class="userRatings">
+					</label>
+				</li>
+				</ul>
+			</div>
+		</div>
+		<div class="rowTab">
+			<div class="labels">
+				<label for="comments">Any Comments or Suggestions?</label>
+			</div>
+			<div class="rightTab">
+				<textarea id="comments" name="comments" placeholder="Enter your comments here...." class="input-field" style="height: 50px; resize: vertical;"></textarea>
+			</div>
+		</div>
+		<button id="submit" type="submit">Submit</button>
+	</form>
+</div>
+</body>
+</html>
