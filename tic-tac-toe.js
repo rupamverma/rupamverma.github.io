@@ -88,6 +88,7 @@
 		   return minimax(ticTacBoard,aiPlayer).index;
 		 }
 		function gameTie(){
+			var count=0;
 		  if (emptyBox().length==0){
 		    for(var i=0;i<cells.length;i++){
 		      cells[i].style.backgroundColor="green";
